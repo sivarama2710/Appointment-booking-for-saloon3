@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url(https://allthedifferences.com/wp-content/uploads/2023/05/pexels-delbeautybox-853427-scaled-e1686229024908-728x546.jpg.webp);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+    }
+    h2 {
+        color: #333;
+        text-align: center;
+        font-weight:bold;
+    }
+    form {
+        width: 300px;
+        margin: 0 auto;
+        padding: 50px;
+        border: 3px solid rgb(50,50,50);
+        border-radius: 15px;
+    }
+    label {
+        color:#000;
+        font-size:15px;
+    }
+    input[type="text"], input[type="email"], input[type="password"],[type="tel"]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color:rgb(60,160,70);
+        color: white;
+        padding: 15px 20px;
+        margin:0;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: medium;
+    }
+    input[type="submit"]:hover {
+        background-color:darkgreen;
+    }
+    p{
+        text-align: center;
+    }
+    p>a{
+            color:blue;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <form id="signupform" action="c.html" method="post">
+        <h2>Sign Up</h2>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Full Name" required><br>
+        <label for="phone">Number:</label><br>
+        <input type="tel" id="phone" name="phone" required placeholder="+91"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="password">confirm Password:</label><br>
+        <input type="password" id="confirm password" name="confirm password" required><br>
+        <input type="submit" value="Sign Up">
+        <p>Already have an account? <a href="a.html">Login</a></p>
+    </form>
+</body>
+</html>
